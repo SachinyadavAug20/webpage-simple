@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+*::selection{
+    background-color: white;
+    color: blueviolet;
+}
+body {
+    background-color: black;
+}
+
+header nav {
+    background-color: aliceblue;
+    display: flex;
+}
+
+nav div.logo img {
+    margin: 8px;
+}
+
+ul.nav-icon {
+    display: flex;
+    width: 125vw;
+    gap :-12px;
+    position: relative;
+    top: -9px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    place-items: center;
+    list-style: none;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+div.buy-now a {
+    text-decoration: none;
+    color: black;
+}
+
+div.buy-now-containter {
+    display: flex;
+    width: 50vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+div.buy-now {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 10vw;
+}
+
+div.buy-now:hover {
+    background-color: lime;
+    text-shadow: 2px 2px 3px whitesmoke;
+    
+}
+
+li img {
+    background-color: black;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 21px;
+    position: relative;
+    top: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+nav li:hover {
+    background-color: white;
+    border: 2px solid azure;
+    position: relative;
+    top: 5px;
+    padding-bottom: 20px;
+    margin: 15px;
+    box-shadow: 2px 2px 2px 2px darkgray;
+    border-radius: 50px;
+    height: 15px;
+    text-shadow: 1px 1px 2.5px rgb(196, 196, 196);
+}
+
+div.language {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+div.language img {
+    height: 31px;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+div.language a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+main{
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+main h1.name-company{
+    color: red;
+}
+main img{
+    border: 2px solid black;
+    border-radius: 70px;
+}
+main p{
+    margin-top: 25px;
+    width: 75vw;
+}
+div.download_file{
+    width: 25vw;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: aqua;
+    margin-bottom: 25px;
+}
+div.download_file a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+}
+div.download_file:hover{
+    background-color: rgb(2, 210, 247);
+    color: blue;
+    transform: scale(1.125);
+    border: 2px solid rgb(71, 70, 70);
+    
+}
+main{
+    background-color: rgb(51, 51, 51);
+    width: 75vw;
+    margin-left: 11.5vw;
+    padding: 10px;
+    border-radius: 7px;
+}
+div.download_file a:hover{
+    color: rgb(0, 255, 55);
+}
+div.downloads{
+    width: 100vw;
+    margin: 10px;
+}
+.downloads{
+    display: grid;
+    /* grid-template-areas: ""; */
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 20px;
+    width: auto !important;
+}
+@media screen and (orientation: portrait){
+    .downloads{
+
+        grid-template-columns: 70vw;
+    }
+}
+div.downloads .card{
+    /* width: 300px; */
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    height: 30vh;
+    font-size: medium;
+
+}
+div.downloads h2{
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-transform: uppercase;
+    width: 100vw;
+    margin: 10px;
+    margin: 10px;
+    text-shadow: 1px 1px 5px wheat;
+}
+div.downloads a{
+    margin: 5px;
+    height: 2.5vw;
+    border: 2px solid grey;
+    border-radius: inherit;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+div.downloads a:hover{
+    color: aliceblue;
+    text-shadow: 1px 1px 1px darkgreen;
+    box-shadow: 1px 1px 4px 2.5px grey;
+}
+div.downloads a.i32{
+    background-color: aqua;
+}
+div.downloads a.i64{
+    background-color: green;
+}
+.downloads .card a{
+    position: relative;
+    left: .35vw;
+}
+.downloads h3{
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    font-size: 16px;
+    color: aliceblue;
+}
+footer{
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+
+}
